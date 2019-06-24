@@ -1,6 +1,8 @@
 import * as actionTypes from "./actionTypes";
 import axios from "axios";
 
+// Action Creators
+// set the selected file in state
 export const setCsv = file => {
   return {
     type: actionTypes.SET_CSV,
@@ -8,6 +10,7 @@ export const setCsv = file => {
   };
 };
 
+// upload action for the selected file
 export const uploadCsv = file => {
   return dispatch => {
     axios
@@ -19,6 +22,7 @@ export const uploadCsv = file => {
   };
 };
 
+// set the fetched files in state
 export const setFiles = files => {
   return {
     type: actionTypes.SET_FILES,
@@ -26,6 +30,7 @@ export const setFiles = files => {
   };
 };
 
+// get the list of uploaded files
 export const getFiles = () => {
   return dispatch => {
     console.log("getFiles");
@@ -41,6 +46,7 @@ export const getFiles = () => {
   };
 };
 
+// set the selected file and fetched headers in state
 export const setCurrFile = (file, data) => {
   return {
     type: actionTypes.SET_CURR_FILE,
@@ -49,6 +55,7 @@ export const setCurrFile = (file, data) => {
   };
 };
 
+// get headers of a selected file
 export const getCurrFile = file => {
   return dispatch => {
     axios

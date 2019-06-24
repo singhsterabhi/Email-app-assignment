@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions/actions";
 
+// component to list the files uploaded
 const listFiles = props => {
   return (
     <div>

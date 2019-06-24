@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
+// component to display data of currently selected file
 const currFileData = props => {
   return (
     <div>

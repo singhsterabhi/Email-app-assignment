@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions/actions";
 
+// component for CSV file upload
 const csvUpload = props => {
   const changeHandler = e => {
     const file = e.target.files[0];
